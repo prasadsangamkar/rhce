@@ -408,4 +408,15 @@
   147  httpd -t
   148  lsblk
   149  history
+  151  yum groupinstall mariadb
+  152  systemctl start mariadb
+  153  systemctl enable mariadb
+  154  mysql -uroot
+  155  mysql_secure_installation
+  156  systemctl restart mariadb
+  157  systemctl enable mariadb
+  158  mysql -uroot -predhat
+  159  mysql -uprasad -predhat
+  160  systemctl status firewalld
+
 =================================================

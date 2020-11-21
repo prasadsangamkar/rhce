@@ -1,0 +1,100 @@
+1  ip a
+    2  ifup ens33
+    3  ip a
+    4  vim /etc/sysconfig/network-scripts/ifcfg-ens33
+    5  vi /etc/sysconfig/network-scripts/ifcfg-ens33
+    6  systemctl restart network
+    7  reboot
+    8  ip a
+    9  hostnamectl set-hostname machine1.test.com
+   10  ip a
+   11  hostname
+   12  hostname -i
+   13  cat /etc/resolv.conf
+   14  exit
+   15  systemctl poweroff
+   16  firewall-cmd --permanent --add-rich-rule "rule family="ipv4" source address="192.168.204.180/24" service name="ssh" reject"
+   17  firewall-cmd --reload
+   18  yum install nfs-utils -y
+   19  mkdie /tmp/mynfs -p
+   20  mkdir /tmp/mynfs -p
+   21  vim /etc/exports
+   22  vi /etc/exports
+   23  systemctl restart nfs-server
+   24  systemctl enable nfs-server
+   25  exports -r
+   26  exportsfs -r
+   27  exportfs -r
+   28  systemctl status firewalld
+   29  firewall-cmd --permanent --add-service=nfs
+   30  firewall-cmd --reload
+   31  systemctl restart nfs-server
+   32  systemctl enable nfs-server
+   33  ip a
+   34  systemctl restart nfs-server
+   35  systemctl enable nfs-server
+   36  firewall-cmd --permanent --add-service=nfs
+   37  firewall-cmd --reload
+   38  cd /mnt/
+   39  ls
+   40  mkdir /tmp/mynfs
+   41  mkdir /tmp/mynfs -p
+   42  ls
+   43  cd ..
+   44  mkdir /tmp/mynfs -p
+   45  cd /tmp/
+   46  ls
+   47  systemctl restart nfs-server
+   48  systemctl enable nfs-server
+   49  vim /etc/exports
+   50  vi /etc/exports
+   51  yum install httpd
+   52  systemctl start httpd
+   53  systemctl enable httpd
+   54  systemctl restart nfs-server
+   55  systemctl enable nfs-server
+   56  ip a
+   57  vim /etc/hosts
+   58  vi /etc/hosts
+   59  hostname
+   60  vi /etc/exports
+   61  systemctl restart nfs-server
+   62  systemctl enable nfs-server
+   63  cd
+   64  yum install samba-client cifs-utils
+   65  ip a
+   66  yum install samba-client cifs
+   67  yum install samba-client cifs-utils -y
+   68  mkdie /test
+   69  mkdir /test
+   70  mount -o username=samual //192.168.204.134/ARTIST /test
+   71  history
+   72  mkdir /mnt/akon -p
+   73  cat > /root/mysec
+   74  vim /etc/fstab
+   75  vi /etc/fstab
+   76  mount -av
+   77  df -hT
+   78  mount -av
+   79  history
+   80  cat /root/mysec
+   81  cat > /root/mysec.sec
+   82  cat /root/mysec
+   83  mount -av
+   84  vi /etc/fstab
+   85  ip a
+   86  vi /etc/fstab
+   87  mount -av
+   88  vi /etc/fstab
+   89  mount -av
+   90  df -hT
+   91  yum install httpd
+   92  ip a
+   93  vi /etc/hosts
+   94  curl www1.example.com
+   95  vi /etc/hosts
+   96  curl www1.example.com
+   97  ip a
+   98  curl server1.example.com
+   99  vi /etc/hosts
+  100  curl server1.example.com

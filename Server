@@ -420,3 +420,28 @@
   160  systemctl status firewalld
 
 =================================================
+
+[root@machine1 ~]# cat > /root/condition.sh
+#!/bin/bash
+if [ $# -ne 1 ]; then
+        echo "I love Fedora Linux, try it.."
+elif [ $1 == "Linux" ]; then
+        echo "Red Hat"
+elif [ $1 == "Fedora" ]; then
+        echo "Linux"
+else
+        echo "I love Fedora Linux, try it.."
+fi
+[root@machine1 ~]# sh /root/condition.sh
+I love Fedora Linux, try it..
+[root@machine1 ~]# sh /root/condition.sh Linux
+Red Hat
+[root@machine1 ~]# sh /root/condition.sh Fedora
+Linux
+[root@machine1 ~]#
+===========================================================
+[root@machine1 ~]# sh /root/usersauto.sh test1
+[root@machine1 ~]# su - myuser1
+[myuser1@machine1 ~]$
+=======================================================
+
